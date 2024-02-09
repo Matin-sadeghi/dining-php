@@ -1,0 +1,1257 @@
+                        @font-face {
+                            font-family: Sahel;
+                            src: url("../fonts/Sahel.eot");
+                            src: url("../fonts/Sahel.ttf") format("ttf"), url("../fonts/Sahel.woff") format("woff");
+                            font-weight: normal;
+                        }
+                        
+                        @font-face {
+                            font-family: Nastaliq;
+                            src: url("../fonts/IranNastaliq.ttf");
+                            font-weight: normal;
+                        }
+                        
+                        .hamburger-menu .menu,
+                        .card-overlay,
+                        .card-img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        * {
+                            padding: 0;
+                            margin: 0;
+                        }
+                        
+                        body {
+                            background-color: #262626;
+                        }
+                        
+                        .hamburger-menu {
+                            width: 40px;
+                            height: 40px;
+                            position: fixed;
+                            top: 10%;
+                            right: 5%;
+                            z-index: 300;
+                        }
+                        
+                        @media (max-width: 800px) {
+                            .hamburger-menu {
+                                width: 35px;
+                                height: 35px;
+                            }
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .hamburger-menu {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                        
+                        .hamburger-menu .menu {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            cursor: pointer;
+                            transition: transform .5s;
+                        }
+                        
+                        .hamburger-menu .menu-line {
+                            width: 100%;
+                            height: 4px;
+                            background-color: #d3ab55;
+                            transition: all .5s .5s;
+                            transform-origin: right;
+                        }
+                        
+                        @media (max-width: 800px) {
+                            .hamburger-menu .menu-line {
+                                height: 3px;
+                            }
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .hamburger-menu .menu-line {
+                                height: 2px;
+                            }
+                        }
+                        
+                        .logo {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 70px;
+                            color: #d3ab55;
+                            width: 110px;
+                            height: 110px;
+                            margin-right: 20px;
+                            border: 3px solid #d3ab55;
+                            border-radius: 50%;
+                            text-decoration: none;
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .logo {
+                                font-size: 50px;
+                                width: 90px;
+                                height: 90px;
+                            }
+                        }
+                        
+                        @media (max-width: 600px) {
+                            .logo {
+                                font-size: 40px;
+                                width: 70px;
+                                height: 70px;
+                            }
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .logo {
+                                font-size: 30px;
+                                width: 50px;
+                                height: 50px;
+                                border: 2px solid #d3ab55;
+                            }
+                        }
+                        
+                        .main-name {
+                            font-family: Sahel, Tahoma;
+                            font-size: 50px;
+                            color: #bbb;
+                            font-weight: 300;
+                            letter-spacing: 2px;
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .main-name {
+                                font-size: 40px;
+                            }
+                        }
+                        
+                        @media (max-width: 800px) {
+                            .main-name {
+                                font-size: 35px;
+                            }
+                        }
+                        
+                        @media (max-width: 600px) {
+                            .main-name {
+                                font-size: 30px;
+                            }
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .main-name {
+                                font-size: 20px;
+                                text-align: center;
+                            }
+                        }
+                        
+                        .sub-name {
+                            font-family: Sahel, Tahoma;
+                            font-size: 18px;
+                            color: #bbb;
+                            text-align: center;
+                            font-weight: 300;
+                            letter-spacing: 2px;
+                        }
+                        
+                        @media (max-width: 800px) {
+                            .sub-name {
+                                font-size: 16px;
+                            }
+                        }
+                        
+                        @media (max-width: 600px) {
+                            .sub-name {
+                                font-size: 14px;
+                            }
+                        }
+                        
+                        .main-heading {
+                            font-family: Nastaliq, Tahoma;
+                            font-size: 100px;
+                            font-weight: 300;
+                            color: #d3ab55;
+                            margin-bottom: 40px;
+                        }
+                        
+                        @media (max-width: 1600px) {
+                            .main-heading {
+                                font-size: 80px;
+                            }
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .main-heading {
+                                font-size: 60px;
+                            }
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .main-heading {
+                                font-size: 40px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        
+                        .sub-heading {
+                            font-family: Sahel, Tahoma;
+                            font-size: 60px;
+                            font-weight: 300;
+                            color: #bbb;
+                            margin-bottom: 80px;
+                            text-align: center;
+                        }
+                        
+                        @media (max-width: 1600px) {
+                            .sub-heading {
+                                font-size: 50px;
+                                margin-bottom: 50px;
+                            }
+                        }
+                        
+                        @media (max-width: 1300px) {
+                            .sub-heading {
+                                font-size: 40px;
+                                margin-bottom: 30px;
+                            }
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .sub-heading {
+                                font-size: 30px;
+                            }
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .sub-heading {
+                                font-size: 25px;
+                            }
+                        }
+                        
+                        .main-btn {
+                            border-radius: 3px;
+                            width: 170px;
+                            height: 45px;
+                            font-family: Sahel, Tahoma;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            color: #d3ab55;
+                            background-color: transparent;
+                            border: 1px solid #d3ab55;
+                            cursor: pointer;
+                            transition: all 0.4s;
+                        }
+                        
+                        .main-btn:hover {
+                            background-color: #d3ab55;
+                            color: #262626;
+                        }
+                        
+                        @media (max-width: 800px) {
+                            .main-btn {
+                                width: 150px;
+                                height: 35px;
+                                font-size: 12px;
+                            }
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .main-btn {
+                                width: 130px;
+                                height: 30px;
+                                font-size: 10px;
+                            }
+                        }
+                        
+                        .card {
+                            width: 33.3333%;
+                            height: 30vw;
+                            position: relative;
+                            overflow: hidden;
+                        }
+                        
+                        .card:hover .card-overlay {
+                            left: 0;
+                        }
+                        
+                        .card-overlay {
+                            position: absolute;
+                            top: 0;
+                            left: -100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            color: #fff;
+                            z-index: 10;
+                            background-color: rgba(211, 171, 85, 0.6);
+                            transition: .5S;
+                        }
+                        
+                        .card-overlay-heading {
+                            font-family: Nastaliq, Tahoma;
+                            font-size: 50px;
+                            font-weight: 300;
+                            letter-spacing: 2px;
+                        }
+                        
+                        @media (max-width: 900px) {
+                            .card-overlay-heading {
+                                font-size: 35px;
+                            }
+                        }
+                        
+                        @media (max-width: 600px) {
+                            .card-overlay-heading {
+                                font-size: 25px;
+                            }
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .card-overlay-heading {
+                                display: none;
+                            }
+                        }
+                        
+                        .card-overlay-paragraph {
+                            font-family: Sahel, Tahoma;
+                            font-size: 30px;
+                            margin-bottom: 30px;
+                            font-weight: 300;
+                            letter-spacing: 2px;
+                        }
+                        
+                        @media (max-width: 900px) {
+                            .card-overlay-paragraph {
+                                font-size: 20px;
+                            }
+                        }
+                        
+                        @media (max-width: 600px) {
+                            .card-overlay-paragraph {
+                                font-size: 15px;
+                            }
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .card-overlay-paragraph {
+                                display: none;
+                            }
+                        }
+                        
+                        .card-overlay-btn {
+                            width: 150px;
+                            height: 40px;
+                            color: #d3ab55;
+                            background-color: #fff;
+                            font-family: Sahel, Tahoma;
+                            font-size: 14px;
+                            border: 1px solid #d3ab55;
+                            border-radius: 30px;
+                            outline: none;
+                            cursor: pointer;
+                        }
+                        
+                        @media (max-width: 900px) {
+                            .card-overlay-btn {
+                                font-size: 12px;
+                                width: 130px;
+                                height: 30px;
+                            }
+                        }
+                        
+                        @media (max-width: 600px) {
+                            .card-overlay-btn {
+                                font-size: 10px;
+                                width: 100px;
+                            }
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .card-overlay-btn {
+                                font-size: 10px;
+                                width: 90px;
+                            }
+                        }
+                        
+                        .card-img {
+                            object-fit: cover;
+                            opacity: 0.5;
+                        }
+                        
+                        .navbar {
+                            position: relative;
+                            z-index: 200;
+                        }
+                        
+                        .navbar-navigation {
+                            display: flex;
+                        }
+                        
+                        .navbar-navigation-left {
+                            width: 50vw;
+                            height: 100vh;
+                            background-color: #262626;
+                            position: fixed;
+                            left: -50vw;
+                            transition: left 0.7s cubic-bezier(1, 0, 0, 1);
+                        }
+                        
+                        @media (max-width: 800px) {
+                            .navbar-navigation-left {
+                                display: none;
+                            }
+                        }
+                        
+                        .navbar-navigation-left .left-img {
+                            width: 50%;
+                            position: absolute;
+                            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.4);
+                            opacity: 0.7;
+                            border-radius: 10px;
+                        }
+                        
+                        @media (max-width: 1300px) {
+                            .navbar-navigation-left .left-img {
+                                width: 55%;
+                            }
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .navbar-navigation-left .left-img {
+                                width: 65%;
+                            }
+                        }
+                        
+                        .navbar-navigation-left .left-img-1 {
+                            top: 15%;
+                            left: 15%;
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .navbar-navigation-left .left-img-1 {
+                                left: 5%;
+                            }
+                        }
+                        
+                        .navbar-navigation-left .left-img-2 {
+                            top: 35%;
+                            left: 25%;
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .navbar-navigation-left .left-img-2 {
+                                left: 15%;
+                            }
+                        }
+                        
+                        .navbar-navigation-left .left-img-3 {
+                            top: 55%;
+                            left: 35%;
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .navbar-navigation-left .left-img-3 {
+                                left: 20%;
+                            }
+                        }
+                        
+                        .navbar-navigation-right {
+                            width: 50vw;
+                            height: 100vh;
+                            background-color: #1f1d1d;
+                            position: fixed;
+                            right: -50vw;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+                        }
+                        
+                        @media (max-width: 800px) {
+                            .navbar-navigation-right {
+                                width: 100vw;
+                                right: -100vw;
+                            }
+                        }
+                        
+                        .navbar-navigation .nav-list-item {
+                            list-style: none;
+                        }
+                        
+                        .navbar-navigation .nav-list-link {
+                            font-family: Sahel, Tahoma;
+                            font-size: 40px;
+                            font-weight: 300;
+                            letter-spacing: 2px;
+                            color: #bbb;
+                            text-decoration: none;
+                            display: block;
+                            margin: 20px;
+                            text-align: center;
+                            transition: all .5s;
+                        }
+                        
+                        @media (max-width: 600px) {
+                            .navbar-navigation .nav-list-link {
+                                font-size: 30px;
+                            }
+                        }
+                        
+                        .navbar-navigation .nav-list-link:hover {
+                            color: #d3ab55;
+                            letter-spacing: 4px;
+                        }
+                        
+                        .checkbox:checked~.navbar-navigation .navbar-navigation-left {
+                            left: 0;
+                        }
+                        
+                        .checkbox:checked~.navbar-navigation .navbar-navigation-right {
+                            right: 0;
+                        }
+                        
+                        .checkbox:checked~.hamburger-menu .menu {
+                            transform: rotateZ(90deg);
+                        }
+                        
+                        .checkbox:checked~.hamburger-menu .menu-line-1 {
+                            transform: rotateZ(-40deg);
+                        }
+                        
+                        .checkbox:checked~.hamburger-menu .menu-line-2 {
+                            opacity: 0;
+                        }
+                        
+                        .checkbox:checked~.hamburger-menu .menu-line-3 {
+                            transform: rotateZ(40deg);
+                        }
+                        
+                        .header {
+                            position: relative;
+                            width: 100%;
+                            height: 100vh;
+                            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../image/bg.jpeg") center no-repeat;
+                            background-size: cover;
+                        }
+                        
+                        .header .brand {
+                            display: flex;
+                            align-items: center;
+                            position: absolute;
+                            top: 15%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .header .brand {
+                                position: absolute;
+                                top: 12%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                        
+                        .header-banner {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            text-align: center;
+                        }
+                        
+                        .about-us {
+                            height: 90vh;
+                            display: flex;
+                            align-items: center;
+                        }
+                        
+                        @media (max-width: 800px) {
+                            .about-us {
+                                height: 70vh;
+                            }
+                        }
+                        
+                        @media (max-width: 400px) {
+                            .about-us {
+                                margin-bottom: 50px;
+                            }
+                        }
+                        
+                        .about-us-left {
+                            width: 40%;
+                        }
+                        
+                        .about-us-left img {
+                            width: 100%;
+                            opacity: 0.7;
+                        }
+                        
+                        @media (max-width: 800px) {
+                            .about-us-left {
+                                display: none;
+                            }
+                        }
+                        
+                        .about-us-right {
+                            width: 60%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 0 80px;
+                            box-sizing: border-box;
+                        }
+                        
+                        @media (max-width: 1300px) {
+                            .about-us-right {
+                                padding: 0 50px;
+                            }
+                        }
+                        
+                        @media (max-width: 800px) {
+                            .about-us-right {
+                                width: 100%;
+                            }
+                        }
+                        
+                        .about-us-right .main-heading {
+                            font-size: 60px;
+                            margin-bottom: 20px;
+                        }
+                        
+                        @media (max-width: 1600px) {
+                            .about-us-right .main-heading {
+                                font-size: 80px;
+                            }
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .about-us-right .main-heading {
+                                font-size: 60px;
+                            }
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .about-us-right .main-heading {
+                                font-size: 40px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        
+                        .about-us-right .sub-heading {
+                            font-size: 40px;
+                            margin-bottom: 20px;
+                        }
+                        
+                        @media (max-width: 1600px) {
+                            .about-us-right .sub-heading {
+                                font-size: 50px;
+                                margin-bottom: 50px;
+                            }
+                        }
+                        
+                        @media (max-width: 1300px) {
+                            .about-us-right .sub-heading {
+                                font-size: 40px;
+                                margin-bottom: 30px;
+                            }
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .about-us-right .sub-heading {
+                                font-size: 30px;
+                            }
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .about-us-right .sub-heading {
+                                font-size: 25px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        
+                        .about-us-right .stars {
+                            margin: 30px 0px;
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .about-us-right .stars {
+                                margin: 15px 0px;
+                            }
+                        }
+                        
+                        .about-us-right .star {
+                            font-size: 15px;
+                            color: #d3ab55;
+                            margin-left: 10px;
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .about-us-right .star {
+                                font-size: 12px;
+                            }
+                        }
+                        
+                        .about-us-right .description {
+                            font-family: Nastaliq, Tahoma;
+                            font-size: 25px;
+                            color: #bbb;
+                            direction: rtl;
+                            text-align: justify;
+                        }
+                        
+                        .about-us-right .description::first-letter {
+                            padding-right: 30px;
+                        }
+                        
+                        @media (max-width: 1600px) {
+                            .about-us-right .description {
+                                font-size: 20px;
+                            }
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .about-us-right .description {
+                                font-size: 14px;
+                            }
+                        }
+                        
+                        .gallery .cards-wrapper {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        
+                        .footer {
+                            padding: 70px 0px 0px 0px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .footer {
+                                padding: 40px 0px 0px 0px;
+                            }
+                        }
+                        
+                        .footer-header {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 70px;
+                        }
+                        
+                        .footer .social-media {
+                            display: flex;
+                            width: 300px;
+                            justify-content: space-between;
+                            margin-bottom: 70px;
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .footer .social-media {
+                                width: 200px;
+                                margin-bottom: 40px;
+                            }
+                        }
+                        
+                        .footer .social-media-item {
+                            list-style: none;
+                        }
+                        
+                        .footer .social-media-link {
+                            text-decoration: none;
+                            font-size: 50px;
+                            color: #bbb;
+                            transition: 0.7s;
+                        }
+                        
+                        .footer .social-media-link:hover {
+                            color: #d3ab55;
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .footer .social-media-link {
+                                font-size: 35px;
+                            }
+                        }
+                        
+                        .footer-copyright {
+                            width: 100%;
+                        }
+                        
+                        .footer-copyright-paragraph {
+                            text-align: center;
+                            background-color: #191919;
+                            padding: 20px 0px;
+                            font-family: Sahel, Tahoma;
+                            font-size: 20px;
+                            color: #bbb;
+                            direction: rtl;
+                        }
+                        
+                        @media (max-width: 800px) {
+                            .footer-copyright-paragraph {
+                                width: 100%;
+                                margin: auto;
+                                text-align: center;
+                                font-size: 15px;
+                            }
+                        }
+                        
+                        @media (max-width: 500px) {
+                            .footer-copyright-paragraph {
+                                font-size: 14px;
+                            }
+                        }
+                        /*   ==================      */
+                        
+                        .category {
+                            width: 100%;
+                            direction: rtl;
+                            margin: 20px 0px;
+                        }
+                        
+                        .category-main {
+                            width: 40%;
+                            background-color: #d3ab55;
+                            margin: 10px auto;
+                            font-size: 18px;
+                            padding: 10px;
+                            font-family: sahel;
+                            cursor: pointer;
+                            border-radius: 2px;
+                            transition: 0.4s;
+                            text-align: center;
+                            box-sizing: border-box;
+                        }
+                        
+                        .category-main:hover {
+                            letter-spacing: 1.5px;
+                        }
+                        
+                        .category-main a {
+                            text-decoration: none;
+                            color: #262626;
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        .category-in-foodPage {
+                            width: 40%;
+                            margin-top: 10px;
+                        }
+                        
+                        .category-in-foodPage .category-main {
+                            width: 100%;
+                            background-color: #d3ab55;
+                            margin: 10px auto;
+                            font-size: 18px;
+                            padding: 10px;
+                            font-family: sahel;
+                            cursor: pointer;
+                            border-radius: 2px;
+                            transition: 0.4s;
+                            text-align: center;
+                            box-sizing: border-box;
+                        }
+                        
+                        .food {
+                            display: flex;
+                        }
+                        
+                        .about-food {
+                            width: 60%;
+                            margin: 20px;
+                            font-size: 18px;
+                        }
+                        
+                        .food-image img {
+                            width: 100%
+                        }
+                        
+                        .food-text {
+                            direction: rtl;
+                            font-family: sahel;
+                        }
+                        
+                        .food-name a {
+                            text-decoration: none;
+                            color: #e9e5dd;
+                            margin: 10px 0px;
+                            font-size: 25px;
+                            text-shadow: 0px 0px 10px #e9e5dd;
+                        }
+                        
+                        .food-category a {
+                            color: #e9e5dd;
+                            margin: 10px 0px;
+                            font-size: 25px;
+                            text-decoration: none;
+                        }
+                        
+                        .food-summary {
+                            color: #bbb;
+                            margin: 10px 0px;
+                        }
+                        
+                        .food-mavad {
+                            margin: 5px 0px;
+                            color: #bbb;
+                        }
+                        
+                        .food-mavad span {
+                            color: #a81b1b;
+                            text-shadow: 0px 0px 10px red;
+                        }
+                        
+                        .food-price {
+                            margin: 5px 0px;
+                            color: #bbb;
+                        }
+                        
+                        .food-price span {
+                            color: #d3ab55;
+                            text-shadow: 0px 0px 10px #d3ab55;
+                        }
+                        
+                        .food-submit {
+                            width: 100%;
+                            text-align: center;
+                            border: 2px solid #d3ab55;
+                            background-color: transparent;
+                            color: #bbb;
+                            font-family: sahel;
+                            cursor: pointer;
+                            padding: 5px 0px;
+                            transition: 0.4s;
+                            margin-bottom: 15px;
+                        }
+                        
+                        .food-submit:hover {
+                            background-color: #d3ab55;
+                            color: #1f1d1d;
+                        }
+                        
+                        .comment-box {
+                            border-radius: 3px;
+                            border: 1px solid #DEDEDE;
+                            padding: 10px;
+                            margin-top: 5px;
+                            direction: ltr;
+                            color: wheat;
+                        }
+                        
+                        .comment-box-header {
+                            font-size: 14px;
+                            font-weight: bold;
+                            margin-bottom: 6px;
+                        }
+                        
+                        .comment-box-date {
+                            float: right;
+                            color: #ACACAC;
+                            font-weight: normal;
+                            font-size: 10px;
+                        }
+                        
+                        .comment {
+                            display: block;
+                            width: calc(100% - 20px);
+                            margin: 8px 0px;
+                            padding: 10px;
+                            border-radius: 3px;
+                            border: 1px solid #DEDEDE;
+                            font-family: sahel;
+                            outline: none;
+                        }
+                        
+                        .submit {
+                            background-color: #F9B500;
+                            border: 1px solid #F9B500;
+                            border-radius: 3px;
+                            padding: 8px;
+                            transition: all 0.3s;
+                            font-family: sahel;
+                        }
+                        
+                        .submit:hover {
+                            background-color: #cf9903;
+                        }
+                        
+                        @media (max-width: 1100px) {
+                            .about-food {
+                                width: 70%;
+                                font-size: 16px;
+                            }
+                            .category-main a {
+                                font-size: 15px;
+                            }
+                        }
+                        
+                        @media (max-width: 750px) {
+                            .food {
+                                margin-top: 15px;
+                                display: block;
+                            }
+                            .about-food {
+                                width: 100%;
+                            }
+                            .category-in-foodPage {
+                                width: 100%;
+                            }
+                            .about-food {
+                                margin: 0;
+                            }
+                            .food-text {
+                                padding: 10px;
+                            }
+                            .category-in-foodPage {
+                                width: 50% !important;
+                                margin: 10px auto;
+                            }
+                        }
+                        
+                        .full {
+                            display: flex;
+                        }
+                        
+                        .posts {
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 70%;
+                            margin-top: 15px;
+                        }
+                        
+                        .post {
+                            width: 50%;
+                        }
+                        
+                        .post img {
+                            width: 100%;
+                        }
+                        
+                        .post-image {
+                            margin: 5px;
+                        }
+                        
+                        .food-name span {
+                            padding-left: 15px;
+                            float: left;
+                            font-size: 14px;
+                            color: #cf9903;
+                            font-family: sahel;
+                        }
+                        
+                        .category-in-categoryPage {
+                            width: 40%;
+                            margin-top: 10px;
+                        }
+                        
+                        .category-in-categoryPage .category-main {
+                            width: 100%;
+                            background-color: #d3ab55;
+                            margin: 10px auto;
+                            font-size: 18px;
+                            padding: 10px;
+                            font-family: sahel;
+                            cursor: pointer;
+                            border-radius: 2px;
+                            transition: 0.4s;
+                            text-align: center;
+                            box-sizing: border-box;
+                        }
+                        
+                        @media (max-width: 1170px) {
+                            .posts {
+                                width: 80%;
+                            }
+                            .category-in-foodPage {
+                                width: 20%;
+                                margin-top: 10px;
+                            }
+                        }
+                        
+                        @media (max-width: 1000px) {
+                            .food-name a {
+                                font-size: 20px;
+                            }
+                            .food-category a {
+                                font-size: 18px;
+                            }
+                        }
+                        
+                        @media (max-width: 970px) {
+                            .full {
+                                display: block;
+                            }
+                            .posts {
+                                width: 100%;
+                            }
+                            .food-text {
+                                padding-right: 10px;
+                            }
+                            .category-in-categoryPage {
+                                width: 50%;
+                                margin: 10px auto;
+                            }
+                        }
+                        
+                        @media (max-width: 850px) {
+                            .food-name a {
+                                font-size: 19px;
+                            }
+                            .food-category a {
+                                font-size: 17px;
+                            }
+                        }
+                        
+                        @media (max-width: 650px) {
+                            .post {
+                                width: 100%;
+                            }
+                        }
+                        
+                        @media (max-width: 470px) {
+                            .food-name a {
+                                font-size: 17px;
+                            }
+                            .food-category a {
+                                font-size: 15px;
+                            }
+                            .food-price {
+                                font-size: 15px;
+                            }
+                        }
+                        
+                        @media (max-width: 320px) {
+                            .food-name a {
+                                font-size: 14px;
+                            }
+                            .food-category a {
+                                font-size: 12px;
+                            }
+                            .food-price {
+                                font-size: 12px;
+                            }
+                        }
+                        
+                        @media (max-width: 210px) {
+                            .food-name a {
+                                font-size: 12px;
+                            }
+                            .food-category a {
+                                font-size: 9px;
+                            }
+                            .food-price {
+                                font-size: 9px;
+                            }
+                        }
+                        
+                        table {
+                            margin: 20px auto;
+                            width: 90%;
+                            font-family: sahel;
+                            direction: rtl;
+                            font-size: 17px;
+                        }
+                        
+                        table,
+                        tr,
+                        td {
+                            border: 1px solid #cf9903;
+                            border-collapse: collapse;
+                            color: white;
+                            text-align: center;
+                            padding: 5px;
+                        }
+                        
+                        @media (max-width: 500px) {
+                            table {
+                                font-size: 15px;
+                            }
+                        }
+                        
+                        @media (max-width: 350px) {
+                            table {
+                                font-size: 12px;
+                            }
+                        }
+                        
+                        #search_form {
+                            margin-top: 20px;
+                        }
+                        
+                        #search_btn {
+                            cursor: pointer;
+                            width: 20%;
+                            height: 38px;
+                            border-radius: 40px;
+                            outline: none;
+                            position: relative;
+                            left: -20px;
+                            float: left;
+                        }
+                        
+                        #search_input {
+                            width: 77%;
+                            border-radius: 10px;
+                            height: 20px;
+                            outline: none;
+                            padding: 5px;
+                            font-family: sahel;
+                            direction: rtl;
+                            float: right;
+                            border: none;
+                        }
+                        
+                        @media (max-width: 500px) {
+                            #search_btn {
+                                cursor: pointer;
+                                width: 25%;
+                                height: 30px;
+                                border-radius: 40px;
+                                outline: none;
+                                line-height: 10px;
+                                float: left;
+                                font-size: 10px;
+                                left: -13px;
+                            }
+                            #search_input {
+                                width: 67%;
+                                border-radius: 10px;
+                                height: 15px;
+                                outline: none;
+                                padding: 5px;
+                                font-family: sahel;
+                                direction: rtl;
+                                float: right
+                            }
+                            @media (max-width: 300px) {
+                                #search_btn {
+                                    width: 80%;
+                                    float: none;
+                                    display: block;
+                                    margin: 10px auto;
+                                    height: 30px;
+                                    left: 0px;
+                                }
+                                #search_input {
+                                    width: 80%;
+                                    border-radius: 10px;
+                                    height: 15px;
+                                    float: none;
+                                    display: block;
+                                    margin: 10px auto;
+                                }
+                            }
+                        }
+                        /*# sourceMappingURL=main.css.map */
